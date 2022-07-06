@@ -1,4 +1,4 @@
-## zlib license [&copy;](https://github.com/s9a) [:heartbeat:](../../pulse)
+# zlib license [&copy;](https://github.com/s9a) [:heartbeat:](../../pulse)
 
 ```
 This software is provided 'as-is', without any express or implied
