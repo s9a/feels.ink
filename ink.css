@@ -1,0 +1,70 @@
+@media (color) {
+  :root {
+    --ink: black;
+    --oil: honeydew;
+  }
+  .amber { --oil: lightsalmon }
+  .blush { --oil: hotpink }
+  .breeze { --oil: mistyrose }
+  .foam { --oil: darkturquoise }
+  .fume { --oil: #d0e }
+  .gel { --oil: mediumslateblue }
+  .glow { --oil: #ec0 }
+  .gush { --oil: violet }
+  .lava { --oil: chocolate }
+  .sand { --oil: navajowhite }
+  .storm { --oil: gainsboro }
+  .tide { --oil: deepskyblue }
+  .orca { --oil: mediumorchid }
+  .love { --oil: #bae }
+}
+
+@media (prefers-contrast: less) {
+  .blush { --oil: lightpink }
+  .breeze { --oil: bisque }
+  .fume { --oil: #c0d }
+  .sand { --oil: peachpuff }
+  .storm { --oil: silver }
+  .tide { --oil: dodgerblue }
+  .amber { --oil: salmon }
+}
+
+@media (prefers-contrast: more) {
+  .foam { --oil: turquoise }
+  .gel { --oil: mediumpurple }
+  .glow { --oil: #ee1 }
+  .gush { --oil: plum }
+  .lava { --oil: peru }
+  .orca { --oil: orchid }
+}
+
+@media (color) {
+  .wet * {
+    background-color: transparent;
+    color: inherit;
+  }
+
+  .wet :any-link { text-decoration: wavy overline }
+  .wet :focus { outline: thick double }
+  .wet ::selection {
+    background-color: rebeccapurple;
+    color: lemonchiffon;
+  }
+
+  .blood.blood {
+    background-color: var(--oil);
+    color: var(--ink);
+  }
+
+  .bleed.bleed {
+    background-color: var(--ink);
+    color: var(--oil);
+  }
+}
+
+@media (prefers-color-scheme:light) {
+  .bleed.blood {
+    background-color: var(--oil);
+    color: var(--ink);
+  }
+}
